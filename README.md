@@ -51,6 +51,16 @@ sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
 sudo apt-get update
 sudo apt-get install mysql-server
 ```
-
+#### 4 Установить и удалить deb-пакет с помощью dpkg.
+Загрузил, установил, запустил пакет sl
+```
+wget http://ftp.us.debian.org/debian/pool/main/s/sl/sl_5.02-1_amd64.deb
+sudo dpkg -i sl_5.02-1_amd64.deb
+sl
+```
+Удалил пакет
+```
+sudo dpkg -r sl
+```
 
 
