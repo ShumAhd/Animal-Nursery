@@ -113,7 +113,7 @@ CREATE TABLE Животные (
 ```sql
 CREATE TABLE Домашние_животные (
   id INT PRIMARY KEY,
-  имя VARCHAR(50),
+  вид VARCHAR(50),
   FOREIGN KEY (id) REFERENCES Животные(id)
 );
 ```
@@ -122,7 +122,9 @@ CREATE TABLE Домашние_животные (
 ```sql
 CREATE TABLE Собаки (
   id INT PRIMARY KEY,
-  порода VARCHAR(50),
+  имя VARCHAR(50),
+  команда VARCHAR(50),
+  дата_рождения DATE,
   FOREIGN KEY (id) REFERENCES Домашние_животные(id)
 );
 ```
@@ -131,7 +133,9 @@ CREATE TABLE Собаки (
 ```sql
 CREATE TABLE Кошки (
   id INT PRIMARY KEY,
-  окрас VARCHAR(50),
+  имя VARCHAR(50),
+  команда VARCHAR(50),
+  дата_рождения DATE,
   FOREIGN KEY (id) REFERENCES Домашние_животные(id)
 );
 ```
@@ -140,7 +144,9 @@ CREATE TABLE Кошки (
 ```sql
 CREATE TABLE Хомяки (
   id INT PRIMARY KEY,
-  возраст INT,
+  имя VARCHAR(50),
+  команда VARCHAR(50),
+  дата_рождения DATE,
   FOREIGN KEY (id) REFERENCES Домашние_животные(id)
 );
 ```
@@ -149,7 +155,7 @@ CREATE TABLE Хомяки (
 ```sql
 CREATE TABLE Вьючные_животные (
   id INT PRIMARY KEY,
-  размер INT,
+  вид VARCHAR(50),
   FOREIGN KEY (id) REFERENCES Животные(id)
 );
 ```
@@ -158,7 +164,9 @@ CREATE TABLE Вьючные_животные (
 ```sql
 CREATE TABLE Лошади (
   id INT PRIMARY KEY,
-  порода VARCHAR(50),
+  имя VARCHAR(50),
+  команда VARCHAR(50),
+  дата_рождения DATE,
   FOREIGN KEY (id) REFERENCES Вьючные_животные(id)
 );
 ```
@@ -167,7 +175,9 @@ CREATE TABLE Лошади (
 ```sql
 CREATE TABLE Верблюды (
   id INT PRIMARY KEY,
-  возраст INT,
+  имя VARCHAR(50),
+  команда VARCHAR(50),
+  дата_рождения DATE,
   FOREIGN KEY (id) REFERENCES Вьючные_животные(id)
 );
 ```
@@ -177,6 +187,47 @@ CREATE TABLE Верблюды (
 CREATE TABLE Ослы (
   id INT PRIMARY KEY,
   имя VARCHAR(50),
+  команда VARCHAR(50),
+  дата_рождения DATE,
   FOREIGN KEY (id) REFERENCES Вьючные_животные(id)
 );
 ```
+#### 9. Заполнить низкоуровневые таблицы именами(животных), командами которые они выполняют и датами рождения
+```sql
+INSERT INTO Собаки ( имя, команда, дата_рождения)
+VALUES ('Рекс', 'Сидеть', '2018-05-10'),
+       ('Бэйли', 'Лежать', '2019-02-15'),
+       ('Луна', 'Голос', '2020-07-20');
+```
+```sql
+INSERT INTO Собаки ( имя, команда, дата_рождения)
+VALUES ('Мурка', 'Кэс-кэс', '2017-09-01'),
+       ('Барсик', 'А ну брысь' '2018-11-12'),
+       ('Снежок', 'Спать' '2019-04-05');
+```
+```sql
+INSERT INTO Хомяки ( имя, команда, дата_рождения)
+VALUES ('Дейл', 'Ешь', '2021-01-20'),
+       ('Чип', 'Пей', '2022-03-08');
+```
+```sql
+INSERT INTO Лошади ( имя, команда, дата_рождения)
+VALUES ('Рыжий', 'Но', '2020-01-21'),
+       ('Чёрный', 'Стой', '2020-03-08');
+```
+
+```sql
+INSERT INTO Верблюды ( имя, команда, дата_рождения)
+VALUES ('Валера', 'Пошёл', '2019-01-21'),
+       ('Степан', 'Стой', '2019-03-08');
+```
+```sql
+INSERT INTO Ослы ( имя, команда, дата_рождения)
+VALUES ('ЗигЗаг', 'Пошёл', '2018-01-21'),
+       ('Пуш', 'Стой', '2018-03-08');
+```
+10 Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
+
+
+
+
