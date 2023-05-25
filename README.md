@@ -62,5 +62,23 @@ sl
 ```
 sudo dpkg -r sl
 ```
+#### 5 Выложить историю команд в терминале ubuntu
 
+```
+cat > "Домашние животные" <<EOL
+cat > "Вьючные животные" <<EOL
+cat "Домашние животные" "Вьючные животные" > "Друзья человека"
+cat "Друзья человека"
+mv "Друзья человека" "Лучшие друзья человека"
+mkdir "Контрольная"
+mv "Лучшие друзья человека" "Контрольная/"
+sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.17-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
+sudo apt-get update
+sudo apt-get install mysql-server
+wget http://ftp.us.debian.org/debian/pool/main/s/sl/sl_5.02-1_amd64.deb
+sudo dpkg -i sl_5.02-1_amd64.deb
+sl
+sudo dpkg -r sl
+```
 
