@@ -81,4 +81,102 @@ sudo dpkg -i sl_5.02-1_amd64.deb
 sl
 sudo dpkg -r sl
 ```
+#### 6 Нарисовать диаграмму, в которой есть класс родительский класс, домашние животные и вьючные животные, в составы которых в случае домашних животных войдут классы: собаки, кошки, хомяки, а в класс вьючные животные войдут: Лошади, верблюды и ослы).
+```
+                      Животные
+                         |
+              ---------------------
+              |                   |
+      Домашние животные   Вьючные животные
+              |                   |
+   -----------------       -----------------
+   |       |       |       |       |       |
+ Собаки  Кошки  Хомяки  Лошади  Верблюды  Ослы
+```
+#### 7 В подключённом MySQL репозитории создать базу данных “Друзья человека”
+```
+mysql -u shum -p
+```
+```
+CREATE DATABASE Друзья_человека;
+```
+#### 8 Создать таблицы с иерархией из диаграммы в БД
+Таблица "Животные":
+```sql
+CREATE TABLE Животные (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  тип VARCHAR(50)
+);
+```
 
+Таблица "Домашние животные"
+```sql
+CREATE TABLE Домашние_животные (
+  id INT PRIMARY KEY,
+  имя VARCHAR(50),
+  FOREIGN KEY (id) REFERENCES Животные(id)
+);
+```
+
+Таблица "Собаки"
+```sql
+CREATE TABLE Собаки (
+  id INT PRIMARY KEY,
+  порода VARCHAR(50),
+  FOREIGN KEY (id) REFERENCES Домашние_животные(id)
+);
+```
+
+Таблица "Кошки"
+```sql
+CREATE TABLE Кошки (
+  id INT PRIMARY KEY,
+  окрас VARCHAR(50),
+  FOREIGN KEY (id) REFERENCES Домашние_животные(id)
+);
+```
+
+Таблица "Хомяки"
+```sql
+CREATE TABLE Хомяки (
+  id INT PRIMARY KEY,
+  возраст INT,
+  FOREIGN KEY (id) REFERENCES Домашние_животные(id)
+);
+```
+
+Таблица "Вьючные животные"
+```sql
+CREATE TABLE Вьючные_животные (
+  id INT PRIMARY KEY,
+  размер INT,
+  FOREIGN KEY (id) REFERENCES Животные(id)
+);
+```
+
+Таблица "Лошади"
+```sql
+CREATE TABLE Лошади (
+  id INT PRIMARY KEY,
+  порода VARCHAR(50),
+  FOREIGN KEY (id) REFERENCES Вьючные_животные(id)
+);
+```
+
+Таблица "Верблюды"
+```sql
+CREATE TABLE Верблюды (
+  id INT PRIMARY KEY,
+  возраст INT,
+  FOREIGN KEY (id) REFERENCES Вьючные_животные(id)
+);
+```
+
+Таблица "Ослы"
+```sql
+CREATE TABLE Ослы (
+  id INT PRIMARY KEY,
+  имя VARCHAR(50),
+  FOREIGN KEY (id) REFERENCES Вьючные_животные(id)
+);
+```
