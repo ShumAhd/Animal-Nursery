@@ -241,17 +241,34 @@ SELECT * FROM Ослы;
 CREATE TABLE молодые_животные AS
 SELECT *, TIMESTAMPDIFF(MONTH, дата_рождения, CURDATE()) AS возраст_в_месяцах
 FROM (
-  SELECT *
-  FROM (
-    SELECT *
-    FROM Домашние_животные
-    UNION
-    SELECT *
-    FROM Вьючные_животные
-  ) AS животные
-  WHERE дата_рождения >= DATE_SUB(CURDATE(), INTERVAL 3 YEAR)
-    AND дата_рождения <= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
-) AS молодые;
+    SELECT 'Собаки' AS тип_животного, имя, команда, дата_рождения FROM Собаки
+    UNION ALL
+    SELECT 'Кошки' AS тип_животного, имя, команда, дата_рождения FROM Кошки
+    UNION ALL
+    SELECT 'Хомяки' AS тип_животного, имя, команда, дата_рождения FROM Хомяки
+    UNION ALL
+    SELECT 'Лошади' AS тип_животного, имя, команда, дата_рождения FROM Лошади
+    UNION ALL
+    SELECT 'Ослы' AS тип_животного, имя, команда, дата_рождения FROM Ослы
+) AS животные
+WHERE дата_рождения >= DATE_SUB(CURDATE(), INTERVAL 3 YEAR)
+AND дата_рождения <= DATE_SUB(CURDATE(), INTERVAL 1 YEAR);
+
 ```
+#### 12 Объединить все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам.
 
+```sql
+CREATE TABLE Животные_все AS
+SELECT 'Собаки' AS тип_животного, имя, команда, дата_рождения FROM Собаки
+UNION ALL
+SELECT 'Кошки' AS тип_животного, имя, команда, дата_рождения FROM Кошки
+UNION ALL
+SELECT 'Хомяки' AS тип_животного, имя, команда, дата_рождения FROM Хомяки
+UNION ALL
+SELECT 'Лошади' AS тип_животного, имя, команда, дата_рождения FROM Лошади
+UNION ALL
+SELECT 'Ослы' AS тип_животного, имя, команда, дата_рождения FROM Ослы;
 
+```
+# Далее код JAVA
+#### 13 Создать класс с Инкапсуляцией методов и наследованием по диаграмме.
