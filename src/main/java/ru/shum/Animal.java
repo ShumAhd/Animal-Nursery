@@ -1,7 +1,5 @@
 package ru.shum;
-
 public class Animal {
-
   private String name;
   private String command;
 
