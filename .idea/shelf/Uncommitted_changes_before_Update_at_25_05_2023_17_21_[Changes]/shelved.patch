@@ -1,0 +1,172 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1685005278351)
++++ b/.gitignore	(date 1685005278351)
+@@ -0,0 +1,38 @@
++target/
++!.mvn/wrapper/maven-wrapper.jar
++!**/src/main/**/target/
++!**/src/test/**/target/
++
++### IntelliJ IDEA ###
++.idea/modules.xml
++.idea/jarRepositories.xml
++.idea/compiler.xml
++.idea/libraries/
++*.iws
++*.iml
++*.ipr
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++build/
++!**/src/main/**/build/
++!**/src/test/**/build/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+new file mode 100644
+--- /dev/null	(date 1685005288671)
++++ b/pom.xml	(date 1685005288671)
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++  <modelVersion>4.0.0</modelVersion>
++
++  <groupId>ru.shum</groupId>
++  <artifactId>Animal-Nursery</artifactId>
++  <version>1.0-SNAPSHOT</version>
++
++  <properties>
++    <maven.compiler.source>19</maven.compiler.source>
++    <maven.compiler.target>19</maven.compiler.target>
++    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++  </properties>
++
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1685005284625)
++++ b/.idea/misc.xml	(date 1685005284625)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1685005338022)
++++ b/.idea/encodings.xml	(date 1685005338022)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1685005284696)
++++ b/.idea/vcs.xml	(date 1685005284696)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/aws.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/aws.xml b/.idea/aws.xml
+new file mode 100644
+--- /dev/null	(date 1685005284768)
++++ b/.idea/aws.xml	(date 1685005284768)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="accountSettings">
++    <option name="activeRegion" value="us-east-1" />
++    <option name="recentlyUsedRegions">
++      <list>
++        <option value="us-east-1" />
++      </list>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1685005286055)
++++ b/.idea/.gitignore	(date 1685005286055)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml

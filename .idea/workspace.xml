@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e33d3fa7-66b9-4a85-83a2-832b2119ba1e" name="Changes" comment="Merge branch 'master'">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QHKsyUsN8shl8z71CKBuC8171b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e33d3fa7-66b9-4a85-83a2-832b2119ba1e" name="Changes" comment="" />
+      <created>1685005278933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685005278933</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Возьми чистый лист и положи его перед собой, это же так просто.">
+      <created>1685005331069</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685005331069</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Создан файл README.md">
+      <created>1685005607284</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685005607284</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Приступм">
+      <created>1685006213403</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685006213403</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Создал два файла Домашние животные">
+      <created>1685007090812</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685007090812</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Создал новую директорию и переместил файл туда">
+      <created>1685007675749</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685007675749</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Установил пакет">
+      <created>1685007893946</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685007893946</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Загрузил, установил, запустил пакет sl">
+      <created>1685008173192</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685008173192</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Загрузил, все используемые команды">
+      <created>1685008541512</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685008541512</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Создать таблицы с иерархией из диаграммы в БД">
+      <created>1685019000967</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685019000967</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Заполнить низкоуровневые таблицы">
+      <created>1685027527625</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685027527625</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Пробую смёржить ветки">
+      <created>1685056443398</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685056443398</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge branch 'master'">
+      <created>1685057036920</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685057036920</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Возьми чистый лист и положи его перед собой, это же так просто." />
+    <MESSAGE value="Создан файл README.md" />
+    <MESSAGE value="Приступм" />
+    <MESSAGE value="Создал два файла Домашние животные" />
+    <MESSAGE value="Создал новую директорию и переместил файл туда" />
+    <MESSAGE value="Установил пакет" />
+    <MESSAGE value="Загрузил, установил, запустил пакет sl" />
+    <MESSAGE value="Загрузил, все используемые команды" />
+    <MESSAGE value="Создать таблицы с иерархией из диаграммы в БД" />
+    <MESSAGE value="Заполнить низкоуровневые таблицы" />
+    <MESSAGE value="Пробую смёржить ветки" />
+    <MESSAGE value="Смёржил ветки" />
+    <MESSAGE value="Merge branch 'master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master'" />
+  </component>
+</project>
